@@ -62,36 +62,36 @@ class WsBalanceUpdate {
 }
 
 class WsExecutionReport {
-  String eventType;
-  int eventTime;
-  String symbol;
-  String clientOrderId;
-  Side side;
-  OrderType orderType;
-  TimeInForce timeInForce;
-  double qty;
-  double price;
-  double stopPrice;
-  double icebergQty;
-  int orderListID;
-  String origClientOrderId;
-  String executionType;
-  OrderStatus orderStatus;
-  String orderRejectReason;
-  int orderId;
-  double lastExecutedQty;
-  double cumFilledQty;
-  double lastExecutedPrice;
-  double commissionAmount;
-  String commissionAsset;
-  int transactionTime;
-  int tradeId;
-  bool isOnTheBook;
-  bool isMakerSide;
-  int orderCreationTime;
-  double cumQuoteAssetQty;
-  double lastQuoteAssetQty;
-  double quoteQty;
+  String? eventType;
+  int? eventTime;
+  String? symbol;
+  String? clientOrderId;
+  Side? side;
+  OrderType? orderType;
+  TimeInForce? timeInForce;
+  double? qty;
+  double? price;
+  double? stopPrice;
+  double? icebergQty;
+  int? orderListID;
+  String? origClientOrderId;
+  String? executionType;
+  OrderStatus? orderStatus;
+  String? orderRejectReason;
+  int? orderId;
+  double? lastExecutedQty;
+  double? cumFilledQty;
+  double? lastExecutedPrice;
+  double? commissionAmount;
+  String? commissionAsset;
+  int? transactionTime;
+  int? tradeId;
+  bool? isOnTheBook;
+  bool? isMakerSide;
+  int? orderCreationTime;
+  double? cumQuoteAssetQty;
+  double? lastQuoteAssetQty;
+  double? quoteQty;
 
   WsExecutionReport.fromMap(Map m)
       : eventType = m['e'],
