@@ -1019,9 +1019,10 @@ class CoinData {
         isLegalMoney = m['isLegalMoney'],
         locked = double.parse(m['locked']),
         name = m['name'],
-        networkList = (m['networkList'] as List<dynamic>)
-            .map((e) => Network.fromMap(e))
-            .toList(),
+        // networkList = (m['networkList'] as List<dynamic>)
+        //     .map((e) => Network.fromMap(e))
+        //     .toList(),
+        networkList = [],
         storage = double.parse(m['storage']),
         trading = m['trading'],
         withdrawAllEnable = m['withdrawAllEnable'],
